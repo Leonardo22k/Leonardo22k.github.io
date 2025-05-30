@@ -1,0 +1,127 @@
+/* Importar fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #0074D9, #001f3f); /* Degradado celeste a azul oscuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navegación */
+nav {
+    background-color: #000000;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0074D9; /* Celeste al pasar el mouse */
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Sección Productos con Flexbox */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+
+button {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: 425px;
+  
+   
+}
+
+button:hover {
+    background-color: #0074D9;
+}
+
+
+/* estilos de las reseñas */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+/* Estilos de los rectángulos */
+.grid-item {
+    background-color: #d2dce4;
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+/* Diseño de botones productos-reseñas-contactos */
+#div_top_hypers {
+    background-color:#eeeeee;
+    display:inline;      
+}
+#ul_top_hypers li{
+    display: inline;
+}
+
+/* Estilos del h1 */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size:75px;
+    color: #ffffffd5;
+    text-align: left;
+    margin-top: 50px;
+}
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size:40px;
+    color: #ffffffd5;
+    text-align: center;
+    margin-top: 50px;
+}
+h3{color: white;font-size: 50px;}
+h4 {
+    font-family: 'Playfair Display', serif;
+    font-size:40px;
+    color: #000000d5;
+    text-align: center;
+    margin-top: 50px;
+}
